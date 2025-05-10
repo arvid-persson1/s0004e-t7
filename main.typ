@@ -258,17 +258,22 @@ $
 ==
 
 $
-sup |cal(H)(i omega)|^2 = lim_(omega -> plus.minus infinity) |cal(H)(i omega)|^2 = 1
+sup |cal(H)(i omega)|^2 = lim_(omega -> plus.minus infinity) |cal(H)(i omega)|^2 = 1 \
+==> exists.not max |cal(H)(i omega)|^2
 $
 
-There is no $omega$ such that the square magnitude assumes its maximum value.
-
 $
-sup arg cal(H)(i omega) = lim_(omega -> 0^+) arg cal(H)(i omega) = pi/2
+arg cal(H)(i omega) &= arg (i omega)/(0.1 + i omega) \
+  &= arg(i omega) - arg(0.1 + i omega) \
+  &= pi/2 op("sgn") omega - arctan omega/0.1 \
+  &= pi/2 op("sgn") omega - arctan 10omega \
+\
+1/2 sup arg cal(H)(i omega) &= 1/2 lim_(omega -> 0^+) arg cal(H)(i omega) = pi/4 \
+\
+     pi/2 op("sgn") omega - arctan 10omega &= pi/4 \
+<==> arctan 10omega &= pi/4 \
+<==> omega &= 1/10
 $
-
-However, $cal(H)(0) = 0$, so there is no $omega$ such that the phase
-assumes its maximum value either.
 
 ==
 
